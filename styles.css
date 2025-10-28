@@ -1,3 +1,7 @@
+body {
+    font-size: 14px;
+}
+
 .kiosk-screen {
     display: grid;
     grid-template-rows: 47dvh 47dvh 6dvh;
@@ -8,6 +12,7 @@
     aspect-ratio: 9/16;
     max-height: 100dvh;
     line-height: 1.3;
+
 }
 
 .extra-space {
@@ -103,7 +108,7 @@ h2 {
     align-items: center;
     line-height: 1;
     text-align: center;
-    /* font-size: 10px; */
+    font-size: 11px;
 }
 
 .move-buttons {
