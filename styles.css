@@ -7,10 +7,31 @@
         "ada-bar";
     aspect-ratio: 9/16;
     max-height: 100dvh;
+    line-height: 1.3;
 }
 
 .extra-space {
-    /* background: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 87%;
+    place-self: center;
+
+}
+
+.extra-space p {
+    padding: 5px 0;
+    text-align: justify;
+    align-self: start;
+}
+
+.extra-space blockquote {
+    padding: 5px;
+    width: 90%;
+    /* align-self: center; */
+    text-align: center;
 }
 
 .interaction-area {
@@ -32,7 +53,7 @@
     padding: 4px 5px;
     place-content: center;
     grid-template-rows: 1fr;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: 2fr auto 2fr;
     grid-template-areas:
         "move-buttons-left" "guidance-text" "move-buttons-right";
 
@@ -82,18 +103,19 @@ h2 {
     align-items: center;
     line-height: 1;
     text-align: center;
+    /* font-size: 10px; */
 }
 
 .move-buttons {
     display: flex;
     place-content: center;
     gap: 0 4px;
-    width: 100px;
+    width: 88px;
 }
 
 .move-buttons button {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 48px;
+    width: 44px;
 }

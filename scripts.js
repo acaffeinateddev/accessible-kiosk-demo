@@ -1,6 +1,6 @@
 let interactionArea = document.getElementsByClassName("interaction-area")[0];
 let interactionAreaPosition = Number(interactionArea.style.bottom) 
-let movementAmount = 30
+let movementAmount = 50
 
 disableOrEnableMoveButtons();
 
