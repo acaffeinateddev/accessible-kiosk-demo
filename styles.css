@@ -1,5 +1,6 @@
 body {
     font-size: 14px;
+    overflow: hidden;
 }
 
 .kiosk-screen {
@@ -13,6 +14,14 @@ body {
     max-height: 100dvh;
     line-height: 1.3;
 
+}
+
+.ada-limit {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 15dvh;
+    z-index: 999;
 }
 
 .extra-space {
