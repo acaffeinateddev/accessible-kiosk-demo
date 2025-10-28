@@ -1,0 +1,99 @@
+.kiosk-screen {
+    display: grid;
+    grid-template-rows: 47dvh 47dvh 6dvh;
+    grid-template-areas:
+        "extra-space"
+        "interaction-area"
+        "ada-bar";
+    aspect-ratio: 9/16;
+    max-height: 100dvh;
+}
+
+.extra-space {
+    /* background: purple; */
+}
+
+.interaction-area {
+    display: grid;
+    padding: 0 5px;
+    /* row-gap: 2%; */
+    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-areas:
+        "title"
+        "menu-area"
+        "navbar";
+}
+
+.ada-bar {
+    grid-area: ada-bar;
+
+    display: grid;
+    gap: 0 1%;
+    padding: 4px 5px;
+    place-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-areas:
+        "move-buttons-left" "guidance-text" "move-buttons-right";
+
+    position: sticky;
+}
+
+h2 {
+    grid-area: title;
+    place-self: center;
+}
+
+.menu-area {
+    grid-area: menu-area;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.navbar {
+    grid-area: navbar;
+
+    display: grid;
+    place-items: stretch;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(10, 1fr);
+    place-items: center;
+}
+
+.make-deposit,
+.make-payment {
+    grid-row: 1;
+    grid-column: span 3;
+}
+
+.balance-inquiry,
+.get-statement,
+.user-settings {
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+.guidance-text {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    text-align: center;
+}
+
+.move-buttons {
+    display: flex;
+    place-content: center;
+    gap: 0 4px;
+    width: 100px;
+}
+
+.move-buttons button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="kiosk-screen bg-sky-950 outline-2 outline-sky-950/80">
+        <div class="extra-space"></div>
+        <div class="interaction-area bg-zinc-50" style="position: relative;">
+            <h2 class="text-2xl">Please make a selection.</h2>
+            <div class="menu-area">
+                <button class="make-deposit bg-slate-500 text-slate-50 text-xl font-semibold rounded-md">Make
+                    Deposit</button>
+                <button class="make-payment bg-slate-500 text-slate-50 text-xl font-semibold rounded-md">Make
+                    Payment</button>
+                <button class="balance-inquiry bg-slate-700 text-slate-50 text-base font-semibold rounded-md">Balance
+                    Inquiry</button>
+                <button class="get-statement bg-slate-700 text-slate-50 text-base font-semibold rounded-md">Get
+                    Statements</button>
+                <button class="user-settings bg-slate-700 text-slate-50 text-base font-semibold rounded-md">User
+                    Settings</button>
+            </div>
+            <div class="navbar">
+                <button class="cancel-transaction">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-slate-900">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+
+                </button>
+                <button class="language-options">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-slate-900">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+        <div class="ada-bar bg-sky-950">
+            <div class="move-buttons buttons-left">
+                <button class="move-up bg-slate-500 rounded-sm disabled:opacity-50" onclick="moveInteractionAreaUp()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-slate-50">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                </button>
+                <button class="move-down bg-slate-500 rounded-sm disabled:opacity-50"
+                    onclick="moveInteractionAreaDown()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-slate-50">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="guidance-text text-sm text-slate-50">
+                For easier access, use the buttons on the left or right to move the interactive area up or down.
+            </div>
+            <div class="move-buttons buttons-right">
+                <button class="move-up bg-slate-500 rounded-sm disabled:opacity-50" onclick="moveInteractionAreaUp()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-slate-50">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                </button>
+                <button class="move-down bg-slate-500 rounded-sm disabled:opacity-50"
+                    onclick="moveInteractionAreaDown()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-slate-50">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="scripts.js" async defer></script>
+</body>
+
+</html>
