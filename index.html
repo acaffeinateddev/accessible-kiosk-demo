@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -36,7 +36,7 @@
                 interactive area up or down.
             </blockquote>
         </div>
-        <div class="interaction-area bg-zinc-50" style="position: relative;">
+        <div role="main" class="interaction-area bg-zinc-50" style="position: relative;">
             <h2 class="text-2xl">Please make a selection.</h2>
             <div class="menu-area">
                 <button disabled
@@ -56,14 +56,16 @@
                     Settings</button>
             </div>
             <div class="navbar">
-                <button disabled class="cancel-transaction disabled:opacity-50">
+                <button aria-label="Cancel Transaction Button" title="cancel" disabled
+                    class="cancel-transaction disabled:opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6 text-slate-900 disabled:opacity-50">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
 
                 </button>
-                <button disabled class="language-options disabled:opacity-50">
+                <button area-label="Language Settings Button" title="cancel" disabled
+                    class="language-options disabled:opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6 text-slate-900">
                         <path stroke-linecap="round" stroke-linejoin="round"
