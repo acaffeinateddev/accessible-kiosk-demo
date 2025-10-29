@@ -22,8 +22,9 @@
         </div>
         <div class="extra-space text-slate-50 text-xs">
             <h1 class="text-2xl font-bold">Accessible Kiosk Demo</h1>
-            <p>This is a demonstration of a potential solution for certain kiosk models where only part of the screen
-                falls within the boundaries of the ADA's "reach zone" which is 48" from the ground. </p>
+            <p>This is a demonstration of a potential solution for certain kiosk models where only a small part of the
+                screen
+                falls within the ADA's "reach zone" guidelines of 48" from the ground. </p>
 
             <p>In order to keep the buttons a reasonable size on mobile (for demonstration purposes), the instructional
                 text at the bottom is a bit small! Please pretend it is a reasonable size as it would be on an actual
@@ -38,26 +39,31 @@
         <div class="interaction-area bg-zinc-50" style="position: relative;">
             <h2 class="text-2xl">Please make a selection.</h2>
             <div class="menu-area">
-                <button class="make-deposit bg-slate-500 text-slate-50 text-xl font-semibold rounded-md">Make
+                <button disabled
+                    class="make-deposit bg-slate-500 text-slate-50 text-xl font-semibold rounded-md disabled:opacity-60">Make
                     Deposit</button>
-                <button class="make-payment bg-slate-500 text-slate-50 text-xl font-semibold rounded-md">Make
+                <button disabled
+                    class="make-payment bg-slate-500 text-slate-50 text-xl font-semibold rounded-md disabled:opacity-60">Make
                     Payment</button>
-                <button class="balance-inquiry bg-slate-700 text-slate-50 text-base font-semibold rounded-md">Balance
+                <button disabled
+                    class="balance-inquiry bg-slate-700 text-slate-50 text-base font-semibold rounded-md disabled:opacity-60">Balance
                     Inquiry</button>
-                <button class="get-statement bg-slate-700 text-slate-50 text-base font-semibold rounded-md">Get
+                <button disabled
+                    class="get-statement bg-slate-700 text-slate-50 text-base font-semibold rounded-md disabled:opacity-60">Get
                     Statements</button>
-                <button class="user-settings bg-slate-700 text-slate-50 text-base font-semibold rounded-md">User
+                <button disabled
+                    class="user-settings bg-slate-700 text-slate-50 text-base font-semibold rounded-md disabled:opacity-60">User
                     Settings</button>
             </div>
             <div class="navbar">
-                <button class="cancel-transaction">
+                <button disabled class="cancel-transaction disabled:opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6 text-slate-900">
+                        stroke="currentColor" class="size-6 text-slate-900 disabled:opacity-50">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
 
                 </button>
-                <button class="language-options">
+                <button disabled class="language-options disabled:opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6 text-slate-900">
                         <path stroke-linecap="round" stroke-linejoin="round"
